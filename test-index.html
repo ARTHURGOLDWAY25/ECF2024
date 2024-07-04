@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,body{
+            grid-template-rows: auto 1fr auto;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        header{
+            grid-row: 1;
+            background-color: #38761D;
+            color: white;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1{
+            letter-spacing: 2px;
+        }
+
+        header nav ul{
+            display: flex;
+            padding: 0;
+            margin: 0;
+            gap: 15px;
+        }
+
+        header nav ul li{
+            list-style: none;
+            text-underline-offset: 4px;
+           
+        }
+
+        header nav ul li a{
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            
+        }
+
+        main{
+            background-color: aliceblue;
+            
+        }
+
+        .container-fluid{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .introduction, .description {
+    flex: 1; /* Makes both sections flexible to occupy available space */
+    padding: 10px; /* Optional: Adds padding to sections */
+}
+
+
+
+        footer{
+            background-color: #b49a42;
+        }
+
+
+       
+    </style>
+
+    <header>
+        <h1>My Logo</h1>
+        <nav>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">events</a></li>
+                <li><a href="">tickets</a></li>
+                <li><a href="">contact</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="introduction">
+                <h2>Here could be your company</h2>
+                <p>Imagine a vibrant and dynamic company, poised to make a significant impact in its industry. "Here Could Be Your Company" represents a vision of innovation, growth, and leadership. With a commitment to excellence and a forward-thinking approach, this company strives to redefine standards and exceed expectations. From cutting-edge technology to unparalleled customer service, "Here Could Be Your Company" embodies the spirit of possibility and success. It stands as a beacon of opportunity, inviting stakeholders to join a journey of transformation and achievement.</p>
+            </div>
+            <div class="description">
+                <p>description part</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>contact us for free</p>
+        <p>contact us for free</p>
+        <p>contact us for free</p>
+        <p>contact us for free</p>
+        <p>contact us for free</p>
+
+    </footer>
+    
+</body>
+</html>
