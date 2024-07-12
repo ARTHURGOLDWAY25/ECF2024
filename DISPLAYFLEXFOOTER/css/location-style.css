@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Display Fair', sans-serif !important;
+    overflow-x: hidden;
+}
+
+/* header */
+#location-header-img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    overflow-y: hidden !important;
+}
+
+#location-header-img:hover {
+    transform: scale(1.03);
+}
+
+#location-main-text{
+    text-transform: capitalize;
+    color: green;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+}
+
+/* main container styling */
+
+main h6{
+    font-size: 1em;
+    margin-top: 80px;
+    border-top: 4px solid grey;
+    line-height: 50px;
+    color: #D68300;
+    font-weight: 600;
+
+}
+
+main .location-text{
+    margin-left: 10px;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    text-underline-offset: 4px;
+
+    &:hover{
+        text-decoration: underline;
+    }
+    
+}
+
+main .header-text{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: green;
+    border-bottom: 4px solid grey;
+}
+
+#calendar-date,
+#entrances,
+#green-transportation{
+    margin-top: 20px;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+/* icons styling */
+#calendar-img,
+#zoo-entrance,
+#carbon-footprint{  
+    width: 100px;
+    height: 100px;
+}
+
+#zoo-entrance{
+    border-radius: 5px;
+}
+
+#clock,
+#arrow{
+    width: 20px;
+    height: 20px;
+}
+
+
+main .header-subtitle{
+    margin-left: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px #A0A693;
+}
+
+main  .header-subtext{
+    margin-left: 110px;
+    letter-spacing: 1px;
+}
+
+#action-button{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px;
+    font-size: 0.7em;
+    background-color: yellowgreen;
+    color: white;
+    border-radius: 0 8px 0 0;
+}
+
+/* green transportation subtitles */
+#green-subtitle{
+    font-weight: 800;
+}
+
+main .second-main-text{
+    font-size: 1.4em;
+    letter-spacing: 2px;
+}
+
+
