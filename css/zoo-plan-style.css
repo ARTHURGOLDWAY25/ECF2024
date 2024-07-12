@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Display Fair', sans-serif !important;
+}
+
+/* header */
+header{
+    grid-row: 1;
+}
+.navbar {
+    width: 100%;
+    background: linear-gradient(to right,rgb(38, 53, 51), rgb(45, 90, 86) ) ;
+    padding: 30px !important;
+    
+}
+
+.navbar-collapse ul li a{
+    color: white;
+}
+
+
+.navbar-nav li a{
+    font-size: 1em !important;
+}
+
+
+/* main */
+main{
+    grid-row: 2;
+}
+
+
+
+
+/* footer */
+footer{
+    grid-row: 3;
+}
+
+

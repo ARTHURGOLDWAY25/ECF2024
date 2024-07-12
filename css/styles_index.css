@@ -1,0 +1,402 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ html, body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Voga';
+    min-height: 100vh;
+    background-color: #e49a12;
+    background-image: url(../images/Safari\ Heaven\ Zoo.jpg);
+    background-size: cover; /* Ensure background image covers the entire viewport */
+    overflow-x: hidden;
+
+}
+
+@font-face {
+    font-family: 'Voga';
+    src: url('../Voga-Medium-CD/Voga-Medium.otf') format('woff2'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Header */
+
+#animal_kingdom_zoo {
+    font-family: 'Voga' sans-serif;
+    letter-spacing: 4px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); 
+    
+}
+
+header {
+    padding: 1rem;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+    
+}
+
+nav ul li a {
+    transition: all 0.5s ease;
+    text-align: center ;
+    text-transform: uppercase;
+    color: #FFFFFF !important;
+    letter-spacing: 4px;
+    
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2px 5px;
+    border-radius: 5px;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu {
+    background-image: url(../images/zoo_background_image.jpg);
+    border-radius: 12px;
+    background-color: #857c59;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    font-family: 'Voga' sans-serif;
+    font-size: 16px;
+    color: #e9f5f4;
+    padding: 8px 10px;
+    background-color: rgba(9, 107, 42, 0.897);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-underline-offset: 6px;
+}
+
+
+/* Main  section 1*/
+main .container{
+    flex: 1; /* Allow main content to grow and take up available space */
+    width: 100%;
+    padding: 0 15px;
+}
+
+main .section_1{
+    float: right;
+}
+
+.custom-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container without distortion */
+}
+.row.g-0 > [class*='col-'] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+main .card-title , h3{
+    color: #d4760a; /* Elegant gold color */
+    font-family: 'Voga'; /* Elegant serif font */
+    font-size: 1.5em; /* Slightly larger font size for prominence */
+    font-weight: bold; /* Bold for emphasis */
+    text-transform: uppercase; /* Uppercase for a formal look */
+    letter-spacing: 3px; /* Slight spacing for readability */
+    margin-bottom: 15px; /* Space below for separation */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    
+}
+
+main p{
+    color: #814a0a; /* Elegant gold color */
+    font-family: 'Voga'; /* Elegant serif font */
+    font-size: 1.3em; /* Slightly larger font size for prominence */
+    font-weight:400; 
+    letter-spacing: 1px; /* Slight spacing for readability */
+    margin-bottom: 15px; /* Space below for separation */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+   
+
+}
+
+/* Main section 2 */
+main .section-2{
+    padding: 10px;
+    background-image: url(./images/bg-footer.gif);
+    background-color: #e1b382; /* Fallback color if image fails to load or in case it's transparent */
+    background-size: cover; /* Ensures the background image covers the entire element */ 
+}
+
+
+main .section-2 p{
+    color:  #d4760a;;
+}
+
+main .section-2 h5{
+   color:  #653300;
+   font-size: 0.8em;
+   letter-spacing: 3px;
+   text-align: center;
+}
+
+main .section-2 .card{
+    width: 100px; 
+    height: 100px; 
+    align-items: center;
+    text-align: center;
+    transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);   
+    }
+    
+}
+
+/* Main section 3 */
+main .section-3 {
+    background-color: #D3D6D3;
+    padding: 20px;
+}
+
+.section-3 .row{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.section-3 .col-md-4 {
+    flex: 0 0 31%; /* Initial size 31% of container width, no growth or shrink */
+    max-width: 31%; /* Maximum width 31% of container width */
+    border-radius: 10px;
+    background-color:#005959; /* Optional: for better visualization */
+    padding: 15px; /* Optional: internal padding */
+    box-shadow: 10px 5px 4px rgba(0, 0, 0, 0.1);
+     
+}
+
+.section-3 .col-md-4:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.3);
+}
+
+.section-3 .col-md-4:hover h5 {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+ .section-3 h5{
+    color: #CDD1D5; /* Elegant gold color */
+    font-family: 'Voga'; /* Elegant serif font */
+    font-size: 1em; /* Slightly larger font size for prominence */
+    font-weight:600; /* Bold for emphasis */
+    text-transform: uppercase; /* Uppercase for a formal look */
+    letter-spacing: 4px; /* Slight spacing for readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+ }
+
+ .section-3 h4{
+    color: white;
+    text-transform: capitalize; /* h4 join our ecosystem */
+ }
+
+ .section-3 .section-community{
+    background-color: #005959;
+ }
+
+ .section-3 .section-3p p
+ {
+    color: #e5eeee;
+ }
+
+ .section-3 form label{
+    color: white;
+    text-transform: uppercase;
+    font-size:small;
+    letter-spacing: 1px;
+ }
+
+ .section-3 .section-community form{
+    margin: 5px;
+ }
+
+ /* section 3 educational images styling */
+ #educ_custom_img_1,
+ #educ_custom_img_2,
+ #educ_custom_img_3,
+ #educ_custom_img_4{
+    width: 130px;
+    height: 120px;
+    margin-top: 5px;
+    border-radius: 3px;
+    margin-right:  20px;
+    border: 1px solid 	#ffffff;
+    transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: 1px 1px 20px rgba(223, 207, 207, 0.856); 
+    }
+    
+ }
+
+ /* section 3 conservation efforts images styling */
+ #consrv_custom_img_1,
+ #consrv_custom_img_2{
+    width: 130px;
+    height: 120px;
+    border-radius: 3px;
+    margin-right:  20px;
+    border: 1px solid 	#ffffff;
+    transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: 1px 1px 20px rgba(223, 207, 207, 0.856);
+       
+    }
+ }
+
+ /* form styling equal alignment and spacing */
+.form-group {
+    margin-bottom: 20px; /* Vertical spacing between form groups */
+    display: flex; /* Align label and input horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.form-group label {
+    width: 120px; /* Adjust width of labels as needed */
+    margin-right: 10px; /* Space between label and input */
+    text-align: left; /* Align label text to the right */
+}
+
+.form-group input {
+    padding: 8px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Example border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+#join-button{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #B5AF4D;
+    
+}
+
+/* Footer */
+footer{
+    background-image: url("../images/img savanna footer.webp");
+    background-size: cover;
+    padding: 20px 0;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-family: 'Voga' sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    
+}
+
+footer h5{
+    font-size: 1.5em;
+    font-family: 'Voga' sans-serif;
+}
+
+footer p{
+    font-size: 1em;
+}
+
+footer .col-text-center{
+    text-align: center;
+}
+
+footer .border-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Adjust border color and style */
+}
+
+footer .animal-kingdom{
+    transform: rotate(-10deg);
+    margin-left: 13px;
+    height: 180px;
+    width: 180px;
+    border-radius: 5px;
+}
+
+section p{
+    color: #e9f5f4;
+}
+
+
+/* Media query footer */
+
+@media only screen and (max-width: 781px) {
+    .animal-kingdom {
+        display: none;
+    }
+}
+
+/* Media query for section-3 container responsiveness */
+
+@media only screen and (max-width: 1000px) {
+    .section-3 .row {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section-3 .row .col-md-4{
+        flex: 0 0 100%;
+        max-width: 100%;     
+    }
+}
+
+/* 
+@media only screen and (max-width:991px) {
+    footer{
+        display: none;
+    }
+}
+ */
+
+/* Flexbox Method: The footer will stay at the bottom because the main container (main.container) is set to flex: 1, allowing it to grow and fill available space.
+CSS Grid Method: The footer will stay at the bottom because the grid template assigns specific rows for the header, main content, and footer.
+Padding Method: The footer will stay at the bottom due to the padding-bottom and margin-top settings that ensure the footer remains visible. */
+
+
+
+
+
+
+
+
+
+
