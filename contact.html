@@ -110,7 +110,7 @@
                     <h3>contact us</h3>
                     <p id="fields-text-paragraph">Fields marked with an * are required</p>
 
-                    <form action="contact.php" method="post">
+                    <form action="./php/contact.php" method="post" id="zoo-contact">
                         <label for="first-name">First Name <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></label>
                         <input type="text" id="first-name" name="first_name" placeholder="First Name" required><br><br>
                         
@@ -128,40 +128,40 @@
                     <h6>type of inquiry</h6>
                      <div class="form-container">
                         <div class="category-radio">
-                            <input type="radio" name='myCheckbox' id='myCheckbox'>
-                            <label for="animals">Animals</label> <br>
-                            <input type="radio" name='myCheckbox' class='myCheckbox'>
-                            <label for="animals">Planning your visit</label> <br>
-                            <input type="radio" name='myCheckbox' id='myCheckbox'>
-                            <label for="animals">News Media</label> <br>
-                            <input type="radio" name='myCheckbox' id='myCheckbox'>
-                            <label for="animals">Membership</label> <br>
-                            <input type="radio" name='myCheckbox' id='myCheckbox'>
-                            <label for="animals">Public Events</label> <br>
-                            <input type="radio" name='myCheckbox' id='myCheckbox'>
-                            <label for="animals">Learning</label> <br>
-                            <input type="radio" name='myCheckbox' id='myCheckbox'>
-                            <label for="animals">Other</label> <br>
-                            <input type="radio" name='myCheckbox' id='myCheckbox'>
-                            <label for="animals">Careers/Internships</label> <br>
-                            <input type="radio" name='myCheckbox' id='myCheckbox'>
-                            <label for="animals">Marketing/Advertising</label> <br>
-                            <input type="radio" name='myCheckbox' id='myCheckbox'>
-                            <label for="animals">Photo Policies</label> <br>
-                            <input type="radio" name='myCheckbox' id='myCheckbox'>
-                            <label for="animals">Donations</label> <br>
-                            <input type="radio" name='myCheckbox' id='myCheckbox'>
-                            <label for="animals">Rentals/Private Events</label> <br>
-                            <input type="radio" name='myCheckbox' id='myCheckbox'>
-                            <label for="animals">Web/Technical Issues</label> <br>
-                        </div>
+                            <input type="radio" name="category" id="category-animals" value="Animals">
+                            <label for="category-animals">Animals</label> <br>
+                            <input type="radio" name="category" id="category-visit" value="Planning your visit">
+                            <label for="category-visit">Planning your visit</label> <br>
+                            <input type="radio" name="category" id="category-media" value="News Media">
+                            <label for="category-media">News Media</label> <br>
+                            <input type="radio" name="category" id="category-membership" value="Membership">
+                            <label for="category-membership">Membership</label> <br>
+                            <input type="radio" name="category" id="category-events" value="Public Events">
+                            <label for="category-events">Public Events</label> <br>
+                            <input type="radio" name="category" id="category-learning" value="Learning">
+                            <label for="category-learning">Learning</label> <br>
+                            <input type="radio" name="category" id="category-other" value="Other">
+                            <label for="category-other">Other</label> <br>
+                            <input type="radio" name="category" id="category-careers" value="Careers/Internships">
+                            <label for="category-careers">Careers/Internships</label> <br>
+                            <input type="radio" name="category" id="category-marketing" value="Marketing/Advertising">
+                            <label for="category-marketing">Marketing/Advertising</label> <br>
+                            <input type="radio" name="category" id="category-photo" value="Photo Policies">
+                            <label for="category-photo">Photo Policies</label> <br>
+                            <input type="radio" name="category" id="category-donations" value="Donations">
+                            <label for="category-donations">Donations</label> <br>
+                            <input type="radio" name="category" id="category-rentals" value="Rentals/Private Events">
+                            <label for="category-rentals">Rentals/Private Events</label> <br>
+                            <input type="radio" name="category" id="category-technical" value="Web/Technical Issues">
+                            <label for="category-technical">Web/Technical Issues</label> <br>
+                     </div>
                         <h5>message *</h5>
                         <textarea name="textarea" id="textarea" rows="18" cols="100" required>
                         </textarea>
                         <p id="required-field-paragraph">This is a required field.</p>
                         <p id="private-policy-paragraph">By clicking the button below, you are agreeing to our <span><a href="">Privacy Policy.</a></span></p>
 
-                        <button type="button" id="textarea-button">send my message</button>
+                        <button type="submit" id="textarea-button">send my message</button>
                      </div>
                 </div>
             </section>
@@ -338,5 +338,19 @@
      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
      <!-- Your Custom JS -->
      <script src="js/scripts.js"></script>
+
+
+     <script>
+        document.getElementById('textarea-button').addEventListener('click', function(){
+            document.getElementById('zoo-contact').submit();
+        })
+
+       window.load = function (){
+        document.getElementById('zoo-contact').reset()
+       }    
+       
+     </script>
+
+
 </body>
 </html>

@@ -37,11 +37,15 @@
                 
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="Home_Page" href="#" id="Home_Page" style="font-weight: 900; border-bottom: 2px solid #d4760a; ">Home</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" aria-current="Home_Page" href="#" id="navbarDropdownMenuLink" 
+                            data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 900; border-bottom: 2px solid #d4760a; ">Home</a>
+                            <ul class="dropdown-menu dropdown-menu-zoo" aria-labelledby="navbarDropdownMenuLink1">
+                                <li><a class="dropdown-item" id="navigate-directory" href="">general presentation</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown" id="navbarDropdownMenuLink1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">The Zoo</a>
+                            <a class="nav-link dropdown" id="navbarDropdownMenuLink1" href="conservation-efforts.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">The Zoo</a>
                             <ul class="dropdown-menu dropdown-menu-zoo" aria-labelledby="navbarDropdownMenuLink1">
                                 <li><a class="dropdown-item" href="conservation-efforts.html">Conservation Programs</a></li>
                                 <li><a class="dropdown-item" href="educational.html">Educational Resources</a></li>
@@ -226,20 +230,20 @@
                        Together, we can make a difference in protecting our planet's precious wildlife.</p>
                        <h4>join our ecosystem</h4>
 
-                       <form action="community.php" method="post" class="form-container">
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="text" id="email" name="email" placeholder="Email" required><br><br>
-                            </div>
+                       <form action="./php/community.php" method="post" class="form-container" id="join-form">
                             <div class="form-group">
                                 <label for="first_name">First Name</label>
                                 <input type="text" id="first_name" name="first_name" placeholder="First Name" required> <br><br>
                             </div>
                             <div class="form-group">
-                                <label for="last_name">First Name</label>
+                                <label for="last_name">Last Name</label>
                                 <input type="text" id="last_name" name="last_name" placeholder="Last Name" required><br><br>
                             </div>
-                            <button type="button" id="join-button">join now</button>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email" placeholder="Email" required><br><br>
+                            </div>
+                            <button type="submit" id="join-button">join now</button>
                        </form>
                 </div>
             </div>
@@ -301,8 +305,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <!-- Owl Carousel JS -->
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+
     <!-- Your Custom JS -->
-    <script src="js/scripts.js"></script>
+     <script src="./js/navigate.js"></script>
+   
+
+     <!-- js for html to reset clean fields -->
+      <script>
+        window.onload = function (){
+            document.getElementById('join-form').reset();
+        }
+      </script>
 </body>
 </html>
 
