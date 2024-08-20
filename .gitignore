@@ -1,0 +1,14 @@
+/vendor
+/node_modules
+.env
+.DS_Store
+*.log
+*.cache
+*.tmp
+/vendor
+/node_modules
+.env
+.DS_Store
+*.log
+*.cache
+*.tmp
