@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contact-style.css">
+    <title>Contact Page</title>
+    <!-- related links -->
+ <!-- Favicon -->
+ <link rel="icon" href="img/favicon.ico">
+
+ <!-- Google Web Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+ <!-- Bootstrap Icons -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+ <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+ <!-- Owl Carousel CSS -->
+ <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="navbar-brand"    href="#">Safari Heaven Zoo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" id="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown"  id="nav-link" id="navbarDropdownMenuLink1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">The Zoo</a>
+                            <ul class="dropdown-menu dropdown-menu-zoo" aria-labelledby="navbarDropdownMenuLink1">
+                                <li><a class="dropdown-item" href="conservation-efforts.html">Conservation Programs</a></li>
+                                <li><a class="dropdown-item" href="educational.html">Educational Resources</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown"  id="nav-link" id="navbarDropdownMenuLink2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Visitors Info</a>
+                            <ul class="dropdown-menu dropdown-menu-visitors" aria-labelledby="navbarDropdownMenuLink2">
+                                <li><a class="dropdown-item" href="#">Hours of Operation</a></li>
+                                <li><a class="dropdown-item" href="#">Map</a></li>
+                                <li><a class="dropdown-item" href="#">Facilities</a></li>
+                                <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link"  id="nav-link" href="#">Pricing</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown"   id="nav-link" id="navbarDropdownMenuLink3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tickets</a>
+                            <ul class="dropdown-menu dropdown-menu-tickets" aria-labelledby="navbarDropdownMenuLink3">
+                                <li><a class="dropdown-item" href="#">Day Passes</a></li>
+                                <li><a class="dropdown-item" href="#">Annual Memberships</a></li>
+                                <li><a class="dropdown-item" href="#">Group Bookings</a></li>
+                                <li><a class="dropdown-item" href="#">Special Discounts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"   id="nav-link" href="Gallery_index.php">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="#"  id="nav-link" id="navbarDropdownMenuLink4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Events
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-events" aria-labelledby="navbarDropdownMenuLink4">
+                                <li><a class="dropdown-item" href="./Visitor-Feedback/Visitor_Feedback-index.php">Animal Feeding Sessions</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link highlight"  id="contact-us" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main container -->
+    <main>
+        <div class="container-fluid" style="margin: 0; padding: 0;">
+            <img src="./images/join-image.jpg" alt="" id="join-img">
+             <h1>contact us</h1>
+            <section>
+               <div class="col-md-3">
+                <ul>
+                    <li><a href="">hours & location</a></li>
+                    <li><a href="">on-grounds photography</a></li>
+                    <li><a href="">accessibility</a></li>
+                    <li><a href="">visitor faqs</a></li>
+                    <li><a href="">animal car & welfare</a></li>
+                </ul>
+
+               </div>
+               <div class="col-md-9 textarea">
+                    <h1>have a specific question ?</h1>
+                    <p>Before sending a message, check our <span ><a href="http://">Visitor FAQs Page </a></span>  for additional information.</p>
+                    <h3>contact us</h3>
+                    <p id="fields-text-paragraph">Fields marked with an * are required</p>
+
+                    <form action="./php/contact.php" method="post" id="zoo-contact">
+                        <label for="first-name">First Name <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></label>
+                        <input type="text" id="first-name" name="first_name" placeholder="First Name" required><br><br>
+                        
+                        <label for="last-name">Last Name <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></label>
+                        <input type="text" id="last-name" name="last_name" placeholder="Last Name" required><br><br>
+                        
+                        <label for="email">Email * <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></label>
+                        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                        
+                        <label for="phone">Phone <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg></label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone" required><br><br>
+                    
+<!-- radio check box -->
+                    <h4>category *</h4>
+                    <h6>type of inquiry</h6>
+                     <div class="form-container">
+                        <div class="category-radio">
+                            <input type="radio" name="category" id="category-animals" value="Animals">
+                            <label for="category-animals">Animals</label> <br>
+                            <input type="radio" name="category" id="category-visit" value="Planning your visit">
+                            <label for="category-visit">Planning your visit</label> <br>
+                            <input type="radio" name="category" id="category-media" value="News Media">
+                            <label for="category-media">News Media</label> <br>
+                            <input type="radio" name="category" id="category-membership" value="Membership">
+                            <label for="category-membership">Membership</label> <br>
+                            <input type="radio" name="category" id="category-events" value="Public Events">
+                            <label for="category-events">Public Events</label> <br>
+                            <input type="radio" name="category" id="category-learning" value="Learning">
+                            <label for="category-learning">Learning</label> <br>
+                            <input type="radio" name="category" id="category-other" value="Other">
+                            <label for="category-other">Other</label> <br>
+                            <input type="radio" name="category" id="category-careers" value="Careers/Internships">
+                            <label for="category-careers">Careers/Internships</label> <br>
+                            <input type="radio" name="category" id="category-marketing" value="Marketing/Advertising">
+                            <label for="category-marketing">Marketing/Advertising</label> <br>
+                            <input type="radio" name="category" id="category-photo" value="Photo Policies">
+                            <label for="category-photo">Photo Policies</label> <br>
+                            <input type="radio" name="category" id="category-donations" value="Donations">
+                            <label for="category-donations">Donations</label> <br>
+                            <input type="radio" name="category" id="category-rentals" value="Rentals/Private Events">
+                            <label for="category-rentals">Rentals/Private Events</label> <br>
+                            <input type="radio" name="category" id="category-technical" value="Web/Technical Issues">
+                            <label for="category-technical">Web/Technical Issues</label> <br>
+                     </div>
+                        <h5>message *</h5>
+
+                            
+                                <textarea name="textarea" id="textarea" rows="18" cols="100" required>
+                                </textarea>
+                                <p id="required-field-paragraph">This is a required field.</p>
+                                <p id="private-policy-paragraph">By clicking the button below, you are agreeing to our <span><a href="">Privacy Policy.</a></span></p>
+
+                                <button type="submit" id="textarea-button">send my message</button>
+
+                            </form>  
+                     </div>
+                </div>
+            </section>
+
+            <!-- general information section -->
+            <section class="section2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="section-wrapper mt-5">
+                                <h1 id="general-information">General Information</h1>  
+                                <p>Administration Office</p>
+                                <p id="address-paragraph">
+                                    Safari Heaven Zoo <br>
+                                    1234 Safari Drive <br>
+                                    San Diego, CA 92101
+                                </p>
+                                <p>Parking Lot</p>
+                                <p id="parking-paragraph">
+                                    2400 N. Cannon Drive <br>
+                                    Chicago, IL 60614
+                                </p>
+                                <p>Phone</p>
+                                <p id="phone-paragraph">
+                                    312-742-2000
+                                </p>
+                                
+                                <h1 id="join-header">Join Our Ecosystem</h1>   
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="image-container">
+                                <img src="./images/contact-map.jpg" alt="" id="contact-map">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <p style="margin: 0 27px;">Sign up for our weekly newsletter 
+                to get news, events, and stories sent straight to your inbox.
+            </p>
+            <form class="row g-3 needs-validation" novalidate style="margin: 0 20px;">
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="Mark" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Otto" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">City</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom04" class="form-label">State</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>Los Angeles</option>
+                    <option>New York City</option>
+                    <option>Chicago</option>
+                    <option>Houston</option>
+                    <option>Phoenix</option>
+                    <option>Philadelphia</option>
+                    <option>San Antonio</option>
+                    <option>San Diego</option>
+                    <option>Dallas</option>
+                    <option>San Jose</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button id="btn-warning" type="submit">join now</button>
+                </div>
+              </form>
+            <!-- ----------------------------------------- -->
+             <p></p>
+            
+        </div>
+
+    </main>
+<!-- footer -->
+<footer>
+    <div class="footer-container">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>About Us</h3>
+                <p>Safari Heaven Zoo is dedicated to wildlife conservation and education. Visit us to experience the beauty of nature.</p>
+            </div>
+            <div class="col-md-3">
+                <h3 id="visit-us">Visit Us</h3>
+                <ul>
+                    <li><a href="#">Plan Your Visit</a></li>
+                    <li><a href="#">Tickets</a></li>
+                    <li><a href="#">Hours & Directions</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3 id="explore">Explore</h3>
+                <ul>
+                    <li><a href="#">Exhibits & Animals</a></li>
+                    <li><a href="#">Conservation Efforts</a></li>
+                    <li><a href="#">Educational Programs</a></li>
+                    <li><a href="#">Membership</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3>Contact Us</h3>
+                <address>
+                    Safari Heaven Zoo <br>
+                    1234 Safari Drive <br>
+                    San Diego, CA 92101 <br>
+                    Phone: 312-742-2000 <br>
+                    Email: info@safariheavenzoo.com
+                </address>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p>&copy; 2024 Safari Heaven Zoo. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    
+
+
+     <!-- Bootstrap JS, Popper.js, and jQuery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+     <!-- Owl Carousel JS -->
+     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+     
+     <!-- Your Custom JS -->
+     <script src="js/scripts.js"></script>
+
+
+     <script>
+        document.getElementById('textarea-button').addEventListener('click', function(){
+            document.getElementById('zoo-contact').submit();
+        })
+
+       window.load = function (){
+        document.getElementById('zoo-contact').reset()
+       }    
+       
+     </script>
+
+
+</body>
+</html>

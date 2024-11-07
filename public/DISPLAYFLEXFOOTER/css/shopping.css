@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Display Fair', sans-serif !important;
+    overflow-x: hidden;
+}
+
+/* header */
+#shopping-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+
+/* main container */
+
+main .first-row{
+    height: 1000px;
+}
+
+main .second-row{
+    background-color: #E5E5E5;
+   
+}
+
+main .main-header{
+    margin-top: 50px;
+    text-transform: capitalize;
+    color: green;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 4px rgb(128, 105, 0);
+    width: 50%;
+    text-align: center;
+}
+
+main .main-subheader{
+    text-transform: capitalize;
+    color: green;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 4px rgb(128, 105, 0);
+    width: calc(100% - 650px);
+    text-align: center;
+}
+
+/* img styling in main container */
+#shopping-left-img{
+    width: 650px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-top: 50px;
+
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+
+#shopping-text-header{
+    font-size: 2em;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+main .shopping-main{
+    margin-left: 20px;
+   
+}
+
+main .shopping-text-box{
+    box-shadow: 4px 4px 4px grey;
+    
+}
+
+#fast-time,
+#clock
+{
+    width: 20px;
+    height: 20px;
+    
+}
+
+#giftbox{
+    width: 40px;
+    height: 40px;
+}
+
+#become-member-button{
+    width: 200px;
+    height: 70px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.8em;
+    background-color: #CED100;
+    color: white;
+    border: none
+}
+
+#visit-store-button{
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.8em;
+    color: white;
+    border: none;
+    background-color: #00CED1;
+}
+
+/* seconf maon row styling */
+main .second-main-header-block{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main .second-main-adjustor-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid grey;
+}
+
+#second-block-become-member-button{
+    width: 250px;
+    height: 80px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.8em;
+    background-color: #CED100;
+    color: white;
+    border: none
+}
+
+main .second-main-header{
+    color: green;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 2.3em;
+}
+
+main .second-main-text{
+    font-size: 1.3em;
+    letter-spacing: 1.2px;
+}
+
+#cafe-left-img{
+    border-radius: 5px;
+    width: 600px;
+    
+    
+}
+
+#café-right{
+    width: 600px;
+    margin: 25px 10px;
+    border-radius: 5px;
+    
+}
+
+main .dining-container-left p
+{
+    width: 600px;
+    margin-left: 20px;
+}
+
+main .dining-container-right p{
+    width: 600px;
+    margin-left: 20px;
+}
+
+main .dining-container-left h4,
+main .dining-container-right h4{
+    color: green;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 1px green;
+}
+
+main .dining-container-left .italic,
+main .dining-container-right .italic {
+    font-style: italic;
+    font-style: italic;
+}
+
+#menu-button{
+    width: 170px;
+    height: 70px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    background-color: #CED100;
+    border: none;
+}
+
+/* third row styling */
+main .third-row{
+    background-color: #16537E;
+    height: 900px;
+    
+}
+
+main .third-row-content{
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+main .third-row-content img{
+    width: 600px;
+    border-radius: 5px;
+}
+
+main .third-row-content h3{
+    color: white;
+    margin-top: 10px;
+    letter-spacing: 1.3px;
+    text-shadow: 2px 2px 2px white;
+}
+
+main .third-row-content p{
+    color: white;
+    font-style: italic;
+}
+
+/* img styling scaling */
+.container-fluid img
+{
+    transition: transform 0.3s ease;
+
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+
+#bird-eye-bar,
+#landmark-café{
+    transition: transform 0.3s ease;
+
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+
+/* fourth row */
+
+main .fourth-row{
+    background-color: #D9CAB3;
+    color: #2F4F4F;
+}
+
+main .fourth-row-content{
+    margin: 80px 15px 100px 15px;
+}
+
+main .fourth-row-content h3, h5{
+    letter-spacing: 1.5px;
+}
+
+main .fourth-row-content h2{
+    letter-spacing: 1.5px;
+}
+
+main .content-columns{
+    margin-top: 100px;
+    width: 430px;
+    
+}
+
+main .content-columns a{
+    font-weight: 400;
+}
+
+/* media queries */
+/* media query for first row */
+@media  only screen and (max-width: 1310px) {
+    main .first-row{
+        display: flex;
+        flex-direction: column !important;
+        height: auto;
+    }
+
+    #giftbox{
+        margin-top: 30px;
+    }
+
+    #shopping-left-img{
+        width: 100vw ;
+        object-fit: cover;
+        height: 300px;
+    }
+
+    main .shopping-text-box{
+        width: 100vw;
+    }
+
+    main .main-header,
+    main .main-subheader{
+        width: 100%;
+        text-align: left;
+    }
+
+    #become-member-button,
+    #visit-store-button{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 10px;
+        
+    }
+
+}
+
+/* media query for second row main header */
+
+@media only screen and (max-width: 900px) {
+    main .second-main-adjustor-block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #second-block-become-member-button{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* media query for second row content */
+@media only screen and (max-width: 1310px) {
+    main .second-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #cafe-left-img{
+        width: 100vw;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    main .dining-container-left h4, p, button{
+        width: 100vw !important;
+    }
+
+    #café-right{
+        width: 100vw;
+        height: 300px;
+        object-fit: cover;
+        margin-top: 0;
+
+    }
+
+}
+
+/* media query for third row */
+
+@media only screen and (max-width: 1310px) {
+    main .row .third-row-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bird-eye-bar,
+    #landmark-café{
+        width: 98vw;
+        height: 300px;
+        object-fit: cover;
+    
+    }
+
+    main .third-row{
+        height: auto;
+    }
+}
+
+/* media query fourth row */
+
+@media  only screen and (max-width: 1310px) {
+    main .fourth-row-content{
+        display: block;        
+    }
+
+    main .content-columns p{
+        width: 90vw !important;
+    }
+
+    
+}
+
+
+
+
+
+
+

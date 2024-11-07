@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    grid-template-rows: auto 1fr auto;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+/* header */
+header {
+    grid-row: 1;
+    background-color: #00824f;
+    text-shadow: 1px 1px .9px antiquewhite;
+    
+}
+
+.navbar{
+    padding: 20px;
+}
+
+.navbar-brand{
+    color: antiquewhite;
+}
+
+.nav-item a{
+    color: antiquewhite;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+#events{
+    border-bottom: 1.5px solid orange;
+}
+
+/* feedback image */
+.feedback{
+    background-image: url("../images/Monkey.jpg");
+    width: 100vw;
+    height: 300px;
+    border-top: 5px solid rgb(241, 226, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    text-shadow: 1px 1px 2px antiquewhite;
+    text-transform: capitalize;
+    letter-spacing: 1.3px;
+}
+
+/* main */
+
+main{
+    grid-row: 2;
+    background-color: #b69027;
+}
+
+main .row{
+    border-top: 4px solid orangered;
+}
+
+main .container-fluid{   
+    width: 50vw;
+}
+
+.row h4,
+.user-rows label{
+    color: antiquewhite;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #F0ECE1;
+}
+
+.user-rows input,
+.user-rows textarea{
+    border: 4px solid #7B8DBE;
+    border-radius: 5px;
+}
+
+.btn{
+    width: 170px;
+    height: 60px;
+    background-color: #FFD24D;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    transition: background 0.3s ease;
+
+    &:hover{
+        background: #90b627;
+        color: white;
+    }
+}
+
+/* footer */
+footer{
+    background-color: #004b56;
+    
+}
+
+footer h3{
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 2px white;
+}
+
+footer .row{
+    margin: 0 20px;
+}
+
+footer .col-md-3{
+    margin-top: 20px;
+}
+
+
+footer .bottom-center-text{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid white;
+    margin: 0 30px;
+}
+
+footer .bottom-center-text p{
+    color: white; 
+}
+
+footer .footer-bottom-elements{
+    margin-top: 10px;
+}
+
+footer .col-md-3 p{
+    color: white;
+}
+
+footer .col-md-3 h6{
+    color: #F6B26B;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer .footer-row{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer .footer-row li a{
+    text-decoration: none;
+    color: white;
+
+    &:hover{
+        color: #FFD24D;
+    }
+}
+
+/* media queries */
+/* header setting */
+
+@media only screen and (max-width: 950px) {
+    .feedback h4{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 1106px) {
+    header .text-white-wrapper{
+        width: 20px;
+    }
+
+    #events{
+        border-bottom: none;
+        text-decoration: underline;
+        text-underline-offset: 6px;
+    }
+}
+
+/* main container settin with media queries*/
+@media only screen and (max-width: 960px) {
+
+    main .container-fluid{
+        width: 100vw;
+    }
+    .feedback h4{
+        width: 100vw;
+    }
+}
+
+/* image setting */
+@media only screen and (max-width: 780px) {
+    .feedback{
+        background-image: url(../images/Monkey.jpg);
+        
+       
+    }
+}
+

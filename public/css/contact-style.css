@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-size: cover; /* Ensure background image covers the entire viewport */
+    overflow-x: hidden;
+    
+}
+
+/* header */
+header {
+    grid-row: 1;
+    background-color: #F4F8F1;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    padding: 20px;
+   
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ #navbar-brand{
+    color: #2C5E17;
+    font-size: 1.4em;
+    font-weight: 700;
+ }
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header nav ul li {
+    margin: 5px 0; 
+    padding: 5px;
+}
+
+#nav-link{
+    color: black;
+    
+}
+
+
+header nav ul li a {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px; 
+    overflow: hidden; 
+    border-top: solid #777;
+    border-bottom: solid #777;
+    border-width: 0.5px;
+    border-radius: 0 5px 0 5px;
+
+    /* Create a linear gradient pseudo-element for the background */
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%; 
+        width: 100%;
+        height: 100%;
+        background-color: rgba(151, 221, 105, 0.5); /* Semi-transparent green */
+        transition: left 0.3s ease; /* Transition for left position */
+    }
+
+    /* Hover effect */
+    &:hover::before {
+        left: 0; 
+    }
+}
+
+#contact-us{
+   background-color: rgba(151, 221, 105, 0.5);
+   color: black;
+}
+
+/* dropdown menu links background styling */
+header nav .dropdown-menu-zoo,
+header nav .dropdown-menu-visitors,
+header nav .dropdown-menu-tickets,
+header nav .dropdown-menu-events{
+    background-color: #C2C8CD;
+    
+}
+
+.dropdown-menu-zoo .dropdown-item,
+.dropdown-menu-visitors .dropdown-item,
+.dropdown-menu-tickets .dropdown-item,
+.dropdown-menu-events .dropdown-item {
+    color: aliceblue; /* Text color */
+    text-transform: capitalize;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu-zoo .dropdown-item:hover,
+.dropdown-menu-visitors .dropdown-item:hover,
+.dropdown-menu-tickets .dropdown-item:hover,
+.dropdown-menu-events .dropdown-item:hover{
+    background-color: #d4760a; /* Hover background color */
+    color: white; /* Hover text color */
+}
+
+
+.navbar-toggler-icon {
+    background-color: black; /* Set background color for the toggler */
+    width: 60px; /* Adjust the width of the toggler */
+    height: 30px; /* Adjust the height of the toggler */
+    border: 3px solid #000; /* Add a border around the toggler icon */
+    border-radius: 5px; /* Optional: Add rounded corners for a nicer look */
+    padding: 20px;
+    
+}
+
+
+
+/* main container */
+main{
+    grid-row: 2;
+    background-color: #ececec;
+    color: #295f48;
+    font-family: 'Playfair Display', serif;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+#join-img{
+    height: 12.5rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+main h1{
+    text-transform: capitalize;
+    margin: 0 30px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+main ul {
+    border-top: 2px solid grey;
+    margin-top: 10px;
+    border-color: #d4760a;
+    display: flex;
+    flex-direction: column;
+}
+
+ main ul li{
+    margin-top: 10px;
+    list-style: none;
+    
+ }
+
+ main ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #191919;
+    
+ }
+
+ main section{
+    display: flex;
+    
+ }
+
+ main h3{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+ }
+
+ main #fields-text-paragraph{
+    letter-spacing: 2px;
+ }
+
+ /* main form styling */
+ main section form {
+    display: flex;
+    flex-direction: column;
+ }
+
+ main section form svg:hover{
+    cursor: pointer;
+
+ }
+
+ main section form input{
+    padding-left: 5px;
+    margin-right: 15px;
+    margin-top: 10px;
+    height: 50px;
+    position: relative;
+    
+ }
+
+ main section form input::placeholder {
+    position: absolute;
+    top: 0;
+    transform: translateY(-10%); /* Adjust to move upwards */
+    color: #999; /* Optional: Adjust the placeholder text color */
+}
+
+/* category radio type styling */
+main h4{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+main h6, h5{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    
+}
+
+main .category-radio{
+    margin-top: 10px;
+}
+
+main .category-radio label{
+    margin-top: 5px;
+   margin-left: 5px;
+   margin-bottom: 10px;
+}
+
+#required-field-paragraph{
+    font-size: 0.9em;
+    color: #9c5809;
+}
+
+#private-policy-paragraph{
+    font-size: 1.2em;
+}
+
+#textarea-button,
+#btn-warning{
+    width: 250px;
+    height: 70px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #C8CA56;
+    color: rgb(242, 247, 248);
+    font-weight: 600;
+    border: none;
+    transition: background-color 0.3s ease;
+
+    &:hover{
+        background-color: #8fce00;
+    }
+
+}
+
+/* general information styling */
+
+main .container {
+    margin-left: 0;
+}
+.section-wrapper {
+    padding: 20px; 
+    
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 60%; 
+    margin-top: 35%;
+   
+}
+
+#contact-map {
+    max-width: 100%; /* Ensure the image stays within its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners to the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+
+main .section-wrapper #general-information{
+    margin-left: 0;
+    border-bottom: 2px solid grey;
+    padding-bottom: 20px;
+     
+}
+
+main .section-wrapper p{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+#contact-map{
+   height: 520px;
+   margin-right: 10px;
+}
+
+#join-header{
+    margin-left: 0;
+    margin-top: 10%;
+    border-bottom: 2px solid grey;
+    padding-bottom: 20px;
+    
+}
+
+#address-paragraph,
+#parking-paragraph,
+#phone-paragraph{
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+/* footer */
+footer{
+    grid-row: 3;
+    background-color: #294d55;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-around;
+   
+}
+
+.footer-container {
+    padding: 0 15px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-3 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 2em;
+}
+
+ footer p, address {
+    color: #ccc;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #fff;
+}
+
+.bottom-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.bottom-footer{
+    display: flex;
+    justify-content: center;
+}
+
+#visit-us,
+#explore{
+   margin-left: 28px;
+}
+
+/* media query for header nav li a collapsable elements border elimination*/
+
+@media only screen and (max-width: 991px) {
+    header nav ul li a {
+        border-top: none;
+        border-bottom: none;  
+    }
+}
+
+@media only screen and (max-width: 578px) {
+    main section {
+        flex-direction: column;
+    }
+}
+
+/* media query for contact map */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
