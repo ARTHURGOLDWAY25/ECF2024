@@ -54,7 +54,11 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown" id="navbarDropdownMenuLink2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Visitors Info</a>
                             <ul class="dropdown-menu dropdown_visitors" aria-labelledby="navbarDropdownMenuLink2">
+<<<<<<< HEAD
                                 <li><a class="dropdown-item" href="#">Hours of Operation</a></li>
+=======
+                                <li><a class="dropdown-item" href="" id="user-dashboard">User Dashboard</a></li>
+>>>>>>> feature/Symfony-dashboard-integrated
                                 <li><a class="dropdown-item" href="#">Map</a></li>
                                 <li><a class="dropdown-item" href="#">Facilities</a></li>
                                 <li><a class="dropdown-item" href="#">Accessibility</a></li>
@@ -318,6 +322,38 @@
       <!-- navigation to visitor feedback js -->
       <script src="./js/visitor-feedback.js"></script>
 
+<<<<<<< HEAD
+=======
+      <!-- navigation to user dashboard application -->
+
+      <!-- <script src="./js/dashboard.js">  </script> -->
+
+      <!-- dashboard js dynamic alternative window location test  -->
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const dashboard = document.getElementById("user-dashboard");
+
+            dashboard.addEventListener('click', function name(params) {
+                params.preventDefault();
+
+                const baseUrl = window.location.origin;
+                const symfonyLoginUrl = baseUrl + '/user/login'
+                
+                window.location.href="http://127.0.0.1:8000/user/login"
+            })
+            
+            // alternative method is CORS  - Cross Origin Request
+        })
+      </script>
+
+
+      
+
+     
+
+>>>>>>> feature/Symfony-dashboard-integrated
       
 
          
