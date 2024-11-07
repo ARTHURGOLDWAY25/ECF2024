@@ -1,0 +1,24 @@
+app_user_login:
+  path: /user/login
+  controller: App\Controller\UserLoginController::login
+
+app_registration:
+  path: /registration
+  controller: App\Controller\RegistrationController::register
+
+app_dashboard:
+  path: /dashboard
+  controller: App\Controller\DashboardController::dashboard
+
+app_logout:
+    path: /logout
+
+
+
+
+ 
+
+
+ 
+
+
